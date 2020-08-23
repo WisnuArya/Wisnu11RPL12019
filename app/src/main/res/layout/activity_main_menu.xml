@@ -5,15 +5,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenu">
+    tools:context=".MainMenu"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Welcome"
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="17dp"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:layout_marginTop="40dp"/>
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivprofile"
+                android:src="@mipmap/foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FF00FF"
+                    android:textStyle="bold"
+                    android:text="Nama"
+                    android:id="@+id/Nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Deskripsi"
+                    android:id="@+id/Deskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivprofile2"
+                android:src="@mipmap/foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="#FF00FF"
+                    android:textStyle="bold"
+                    android:text="Nama"
+                    android:id="@+id/Nama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Deskripsi"
+                    android:id="@+id/Deskripsi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
